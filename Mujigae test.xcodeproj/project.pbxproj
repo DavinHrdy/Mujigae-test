@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83551F1522C370A600B855EB /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551F1422C370A600B855EB /* EndViewController.swift */; };
+		83C7D2DD22C38DE500D88484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C7D2DC22C38DE500D88484 /* Assets.xcassets */; };
 		83F77A8322C316870015ECA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F77A8222C316870015ECA9 /* AppDelegate.swift */; };
 		83F77A8522C316870015ECA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F77A8422C316870015ECA9 /* ViewController.swift */; };
 		83F77A8822C316870015ECA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8622C316870015ECA9 /* Main.storyboard */; };
-		83F77A8A22C316880015ECA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8922C316880015ECA9 /* Assets.xcassets */; };
 		83F77A8D22C316880015ECA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8B22C316880015ECA9 /* LaunchScreen.storyboard */; };
 		83F77A9D22C31A440015ECA9 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A9522C31A430015ECA9 /* ProximaNova-Regular.otf */; };
 		83F77AA222C31A440015ECA9 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A9A22C31A440015ECA9 /* Proxima Nova Bold.otf */; };
@@ -20,11 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83551F1422C370A600B855EB /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		83C7D2DC22C38DE500D88484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F77A7F22C316870015ECA9 /* Mujigae test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mujigae test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F77A8222C316870015ECA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F77A8422C316870015ECA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83F77A8722C316870015ECA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		83F77A8922C316880015ECA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F77A8C22C316880015ECA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F77A8E22C316880015ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F77A9522C31A430015ECA9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				83F77AA722C32CC30015ECA9 /* Model */,
 				83F77AA822C32CCA0015ECA9 /* View */,
 				83F77AA922C32CCE0015ECA9 /* Controller */,
-				83F77A8922C316880015ECA9 /* Assets.xcassets */,
 				83F77A8E22C316880015ECA9 /* Info.plist */,
 				83F77AAA22C32CFD0015ECA9 /* Supporting Files */,
 			);
@@ -99,6 +100,7 @@
 			children = (
 				83F77A8622C316870015ECA9 /* Main.storyboard */,
 				83F77A8B22C316880015ECA9 /* LaunchScreen.storyboard */,
+				83C7D2DC22C38DE500D88484 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +110,7 @@
 			children = (
 				83F77A8222C316870015ECA9 /* AppDelegate.swift */,
 				83F77A8422C316870015ECA9 /* ViewController.swift */,
+				83551F1422C370A600B855EB /* EndViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,8 +183,8 @@
 				83F77AA222C31A440015ECA9 /* Proxima Nova Bold.otf in Resources */,
 				83F77A8D22C316880015ECA9 /* LaunchScreen.storyboard in Resources */,
 				83F77A9D22C31A440015ECA9 /* ProximaNova-Regular.otf in Resources */,
-				83F77A8A22C316880015ECA9 /* Assets.xcassets in Resources */,
 				83F77AA622C328420015ECA9 /* Proxima Nova Extrabold.otf in Resources */,
+				83C7D2DD22C38DE500D88484 /* Assets.xcassets in Resources */,
 				83F77A8822C316870015ECA9 /* Main.storyboard in Resources */,
 				83F77AAF22C344E10015ECA9 /* Colors.xcassets in Resources */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83551F1522C370A600B855EB /* EndViewController.swift in Sources */,
 				83F77A8522C316870015ECA9 /* ViewController.swift in Sources */,
 				83F77A8322C316870015ECA9 /* AppDelegate.swift in Sources */,
 				83F77AAC22C332F30015ECA9 /* FoodButton.swift in Sources */,

@@ -41,6 +41,7 @@ import UIKit
     }
 }
 
+// Diagnostics:
 //let buttonSelectTextColor = UIColor(red: 235.0/255.0, green: 161.0/255.0, blue: 161.0/255.0, alpha: 1.0)
 //let buttonUnselectTextColor = UIColor(red: 170.0/255.0, green: 170.0/255.0, blue: 170.0/255.0, alpha: 1.0)
 //
@@ -67,9 +68,6 @@ class FoodButton: UIButton {
     
     @objc func buttonPressed() {
         activateButton(bool: !isOn)
-        
-        //insert action when which food ID tag is activated
-        
     }
     
     func activateButton(bool: Bool) {
@@ -79,7 +77,6 @@ class FoodButton: UIButton {
         let textColor = bool ? UIColor(named: "buttonSelectTextColor") : UIColor(named: "buttonUnselectTextColor")
         
         let borderColor = bool ? UIColor(named: "buttonSelectBorderColor") : UIColor(named: "buttonUnselectBorderColor")
-        
         
         setTitleColor(textColor, for: .normal)
         layer.borderColor = borderColor?.cgColor

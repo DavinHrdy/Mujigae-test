@@ -28,25 +28,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your Favorite Menu at Mujigae" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-K9-glj">
-                                <rect key="frame" x="16" y="55" width="343" height="49"/>
+                                <rect key="frame" x="16" y="55" width="343" height="51.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Extrabld" family="Proxima Nova" pointSize="21"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick 3 or more category of menu you are currently looking (you can change them anytime)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-NV-UMT">
-                                <rect key="frame" x="16" y="124" width="343" height="30.5"/>
+                                <rect key="frame" x="16" y="126.5" width="343" height="32"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                 <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qn0-i8-Krm">
-                                <rect key="frame" x="16" y="178.5" width="343" height="408.5"/>
+                                <rect key="frame" x="16" y="182.5" width="343" height="404.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58N-Cz-yrK" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="650"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4N-g2-aok" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="83" height="40"/>
+                                                <rect key="frame" x="83" y="0.0" width="82" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Uiz-ki-5gX"/>
                                                 </constraints>
@@ -67,9 +67,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgk-Y8-uIJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBJ-Mg-c6G" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="48" width="89" height="40"/>
+                                                <rect key="frame" x="0.0" y="48" width="87" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CJY-gl-HLG"/>
                                                 </constraints>
@@ -90,9 +93,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeX-fZ-VYo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KME-hb-tvF" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="175" y="0.0" width="87" height="40"/>
+                                                <rect key="frame" x="173" y="0.0" width="85" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="SHo-V4-m5m"/>
                                                 </constraints>
@@ -113,9 +119,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYd-Yj-Z9b"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-hP-e3r" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="192" width="112" height="40"/>
+                                                <rect key="frame" x="0.0" y="192" width="108" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="uAO-fq-gq6"/>
                                                 </constraints>
@@ -136,9 +145,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dj0-dh-Ttr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-E4-sDE" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="97" y="48" width="156" height="40"/>
+                                                <rect key="frame" x="95" y="48" width="153" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="aKf-xx-5zN"/>
                                                 </constraints>
@@ -159,9 +171,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7q-HK-aVb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5j-RA-rRQ" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="96" width="78" height="40"/>
+                                                <rect key="frame" x="0.0" y="96" width="77" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="XOu-Hp-JEY"/>
                                                 </constraints>
@@ -182,9 +197,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8C-yd-WBq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNz-Op-iyl" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="240" width="71" height="40"/>
+                                                <rect key="frame" x="0.0" y="240" width="70" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="gka-P4-M2W"/>
                                                 </constraints>
@@ -205,9 +223,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdv-Ct-FgK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-yK-cSA" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="79" y="240" width="70" height="40"/>
+                                                <rect key="frame" x="78" y="240" width="68" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="FZe-6i-au9"/>
                                                 </constraints>
@@ -228,9 +249,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbm-IY-5Qc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQO-IY-eIX" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="480" width="137" height="40"/>
+                                                <rect key="frame" x="0.0" y="480" width="135" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bsc-Te-XKN"/>
                                                 </constraints>
@@ -251,9 +275,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O1v-f1-aF0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-CM-cUG" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="86" y="96" width="81" height="40"/>
+                                                <rect key="frame" x="85" y="96" width="81" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="oXp-pO-D6V"/>
                                                 </constraints>
@@ -274,9 +301,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ob-hp-g3A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlV-dG-okS" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="144" width="78" height="40"/>
+                                                <rect key="frame" x="0.0" y="144" width="76" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="lI3-kR-O4j"/>
                                                 </constraints>
@@ -297,9 +327,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnM-5k-tQ7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEV-VX-c1n" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="86" y="144" width="75" height="40"/>
+                                                <rect key="frame" x="84" y="144" width="74" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xKP-Kc-zKi"/>
                                                 </constraints>
@@ -320,9 +353,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQd-r6-GO9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-gf-xSf" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="148" y="384" width="124" height="40"/>
+                                                <rect key="frame" x="145" y="384" width="121" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="VAD-Vx-7eR"/>
                                                 </constraints>
@@ -343,9 +379,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3Y-yn-kHb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPa-Po-mtQ" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="384" width="140" height="40"/>
+                                                <rect key="frame" x="0.0" y="384" width="137" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="smb-AQ-Abd"/>
                                                 </constraints>
@@ -366,9 +405,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUO-Jm-tG0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eju-rN-WGQ" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="336" width="120" height="40"/>
+                                                <rect key="frame" x="0.0" y="336" width="118" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="j7r-pw-3DI"/>
                                                 </constraints>
@@ -389,9 +431,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8j-Yo-DfG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-qt-8f5" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GIu-l6-V8L"/>
                                                 </constraints>
@@ -412,9 +457,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hy-KD-0jL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpy-Xa-tgb" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="145" y="480" width="125" height="40"/>
+                                                <rect key="frame" x="143" y="480" width="122" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bXA-QF-G5P"/>
                                                 </constraints>
@@ -435,9 +483,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khQ-qV-FgP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1V-ZI-ks6" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="120" y="192" width="55" height="40"/>
+                                                <rect key="frame" x="116" y="192" width="54" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="eNc-b7-L47"/>
                                                 </constraints>
@@ -458,9 +509,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0w-BO-j0A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5n-XQ-ABc" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="288" width="116" height="40"/>
+                                                <rect key="frame" x="0.0" y="288" width="115" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="y1Y-Cj-D9Z"/>
                                                 </constraints>
@@ -481,9 +535,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdV-RD-EaI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-hX-Sjb" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="128" y="336" width="94" height="40"/>
+                                                <rect key="frame" x="126" y="336" width="92" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="DHE-tU-4nH"/>
                                                 </constraints>
@@ -504,9 +561,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GE0-uf-Mtr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pka-Sx-Ken" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="82" y="432" width="80" height="40"/>
+                                                <rect key="frame" x="80" y="432" width="79" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="4YF-Ip-erc"/>
                                                 </constraints>
@@ -527,9 +587,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y31-yJ-643"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JU-L2-nky" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="432" width="74" height="40"/>
+                                                <rect key="frame" x="0.0" y="432" width="72" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="s9Q-Je-DLM"/>
                                                 </constraints>
@@ -550,6 +613,9 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L16-4w-X5R"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpv-mm-HH3" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="576" width="88" height="40"/>
@@ -573,9 +639,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za0-aM-4tH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-MX-jNh" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="528" width="144" height="40"/>
+                                                <rect key="frame" x="0.0" y="528" width="141" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="PYv-OZ-vI0"/>
                                                 </constraints>
@@ -596,9 +665,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4U-Jr-ad5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shn-TQ-zss" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="576" width="111" height="40"/>
+                                                <rect key="frame" x="96" y="576" width="109" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="2Gm-Sm-gub"/>
                                                 </constraints>
@@ -619,9 +691,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQb-yu-z6P"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgt-wZ-Q2m" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="157" y="240" width="57" height="40"/>
+                                                <rect key="frame" x="154" y="240" width="57" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="pSM-0i-7oy"/>
                                                 </constraints>
@@ -642,9 +717,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nf4-Vo-MmB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-7b-7qV" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="170" y="432" width="127" height="40"/>
+                                                <rect key="frame" x="167" y="432" width="124" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="4s0-I6-Nbp"/>
                                                 </constraints>
@@ -665,9 +743,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WX7-Sn-8ya"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERf-5u-jBl" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="215" y="576" width="50" height="40"/>
+                                                <rect key="frame" x="213" y="576" width="51" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="mdN-z7-tY4"/>
                                                 </constraints>
@@ -688,9 +769,12 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDC-oT-ZlU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC9-jC-kzN" customClass="FoodButton" customModule="Mujigae_test" customModuleProvider="target">
-                                                <rect key="frame" x="152" y="528" width="124" height="40"/>
+                                                <rect key="frame" x="149" y="528" width="124" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="scm-Zv-M9c"/>
                                                 </constraints>
@@ -711,55 +795,58 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="foodSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyk-Wq-m8s"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="qC9-jC-kzN" firstAttribute="leading" secondItem="a2J-MX-jNh" secondAttribute="trailing" constant="8" id="0hG-JW-Qwz"/>
-                                            <constraint firstItem="a2J-MX-jNh" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="3VC-5L-ijP"/>
+                                            <constraint firstItem="VgT-qt-8f5" firstAttribute="top" secondItem="58N-Cz-yrK" secondAttribute="top" id="1O0-Uw-ya3"/>
+                                            <constraint firstItem="9JU-L2-nky" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="2Mu-xA-UKM"/>
+                                            <constraint firstItem="fQO-IY-eIX" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="3FF-Uk-aVx"/>
                                             <constraint firstItem="ppD-7b-7qV" firstAttribute="top" secondItem="Itd-gf-xSf" secondAttribute="bottom" constant="8" id="6ev-Fz-xmD"/>
                                             <constraint firstItem="ppD-7b-7qV" firstAttribute="leading" secondItem="pka-Sx-Ken" secondAttribute="trailing" constant="8" id="7Wc-2W-dkn"/>
-                                            <constraint firstItem="U5j-RA-rRQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="7fa-Zs-lMa"/>
                                             <constraint firstItem="9JU-L2-nky" firstAttribute="top" secondItem="IPa-Po-mtQ" secondAttribute="bottom" constant="8" id="88l-3F-oRz"/>
                                             <constraint firstItem="shn-TQ-zss" firstAttribute="top" secondItem="a2J-MX-jNh" secondAttribute="bottom" constant="8" id="9hf-T5-hs3"/>
-                                            <constraint firstItem="fQO-IY-eIX" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="BaK-dU-Tze"/>
+                                            <constraint firstItem="qpv-mm-HH3" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="Arf-Jv-LbA"/>
                                             <constraint firstItem="Itd-gf-xSf" firstAttribute="top" secondItem="Daq-hX-Sjb" secondAttribute="bottom" constant="8" id="Cyj-PG-e9P"/>
-                                            <constraint firstItem="VgT-qt-8f5" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="DFb-It-uFc"/>
-                                            <constraint firstItem="VgT-qt-8f5" firstAttribute="top" secondItem="58N-Cz-yrK" secondAttribute="top" id="DL8-2I-RFV"/>
                                             <constraint firstItem="KME-hb-tvF" firstAttribute="leading" secondItem="q4N-g2-aok" secondAttribute="trailing" constant="8" id="DOZ-WA-1vs"/>
-                                            <constraint firstItem="tdu-hP-e3r" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="FVm-TY-71T"/>
                                             <constraint firstItem="eju-rN-WGQ" firstAttribute="top" secondItem="b5n-XQ-ABc" secondAttribute="bottom" constant="8" id="FeG-mP-vGs"/>
                                             <constraint firstItem="fQO-IY-eIX" firstAttribute="top" secondItem="pka-Sx-Ken" secondAttribute="bottom" constant="8" id="HDH-QP-21I"/>
                                             <constraint firstItem="U5j-RA-rRQ" firstAttribute="top" secondItem="HBJ-Mg-c6G" secondAttribute="bottom" constant="8" id="IYn-yv-tzo"/>
+                                            <constraint firstItem="b5n-XQ-ABc" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="Ilt-Z2-xxt"/>
                                             <constraint firstItem="Daq-hX-Sjb" firstAttribute="leading" secondItem="eju-rN-WGQ" secondAttribute="trailing" constant="8" id="JbX-1Z-rWC"/>
+                                            <constraint firstItem="XNz-Op-iyl" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="K7C-eg-OnO"/>
+                                            <constraint firstItem="DlV-dG-okS" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="KDk-xF-G79"/>
                                             <constraint firstItem="fQO-IY-eIX" firstAttribute="top" secondItem="9JU-L2-nky" secondAttribute="bottom" constant="8" id="KZZ-vV-UKs"/>
                                             <constraint firstItem="pka-Sx-Ken" firstAttribute="leading" secondItem="9JU-L2-nky" secondAttribute="trailing" constant="8" id="Kk3-g1-Qou"/>
-                                            <constraint firstItem="q4N-g2-aok" firstAttribute="top" secondItem="58N-Cz-yrK" secondAttribute="top" id="LDj-0j-xJm"/>
                                             <constraint firstItem="Daq-hX-Sjb" firstAttribute="leading" secondItem="eju-rN-WGQ" secondAttribute="trailing" constant="8" id="Lvz-dV-mbL"/>
-                                            <constraint firstItem="DlV-dG-okS" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="MWV-LK-2kS"/>
                                             <constraint firstItem="b5n-XQ-ABc" firstAttribute="top" secondItem="Rgt-wZ-Q2m" secondAttribute="bottom" constant="8" id="Mqe-tz-SgP"/>
-                                            <constraint firstItem="XNz-Op-iyl" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="OaD-Jd-pQX"/>
+                                            <constraint firstItem="IPa-Po-mtQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="Mv1-tv-xZP"/>
+                                            <constraint firstItem="tdu-hP-e3r" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="Oob-Ff-Fuk"/>
                                             <constraint firstItem="b5n-XQ-ABc" firstAttribute="top" secondItem="XNz-Op-iyl" secondAttribute="bottom" constant="8" id="S04-vI-jyh"/>
                                             <constraint firstItem="Daq-hX-Sjb" firstAttribute="top" secondItem="b5n-XQ-ABc" secondAttribute="bottom" constant="8" id="SkU-Vo-hkH"/>
                                             <constraint firstItem="shn-TQ-zss" firstAttribute="leading" secondItem="qpv-mm-HH3" secondAttribute="trailing" constant="8" id="WB1-ro-bsA"/>
-                                            <constraint firstItem="eju-rN-WGQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="WpN-pd-2nf"/>
-                                            <constraint firstItem="IPa-Po-mtQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="Wt9-Zk-UaD"/>
                                             <constraint firstItem="CjG-E4-sDE" firstAttribute="top" secondItem="q4N-g2-aok" secondAttribute="bottom" constant="8" id="WzD-e0-zeG"/>
                                             <constraint firstItem="N1V-ZI-ks6" firstAttribute="leading" secondItem="tdu-hP-e3r" secondAttribute="trailing" constant="8" id="Zvi-2E-xzK"/>
                                             <constraint firstItem="tdu-hP-e3r" firstAttribute="top" secondItem="DlV-dG-okS" secondAttribute="bottom" constant="8" id="Zyg-A8-2pp"/>
                                             <constraint firstItem="Xpe-CM-cUG" firstAttribute="top" secondItem="CjG-E4-sDE" secondAttribute="bottom" constant="8" id="awn-hL-TEE"/>
-                                            <constraint firstAttribute="height" constant="700" id="bTw-Oy-Q9g"/>
+                                            <constraint firstItem="HBJ-Mg-c6G" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="cIr-CP-NCf"/>
                                             <constraint firstItem="a2J-MX-jNh" firstAttribute="top" secondItem="fQO-IY-eIX" secondAttribute="bottom" constant="8" id="cJa-XR-s3f"/>
                                             <constraint firstItem="ERf-5u-jBl" firstAttribute="leading" secondItem="shn-TQ-zss" secondAttribute="trailing" constant="8" id="dAg-yT-wj7"/>
+                                            <constraint firstAttribute="height" constant="650" id="gXU-oy-yLj"/>
                                             <constraint firstItem="ERf-5u-jBl" firstAttribute="top" secondItem="qC9-jC-kzN" secondAttribute="bottom" constant="8" id="h0Q-j1-2T9"/>
                                             <constraint firstItem="CjG-E4-sDE" firstAttribute="leading" secondItem="HBJ-Mg-c6G" secondAttribute="trailing" constant="8" id="hD1-jc-Tau"/>
                                             <constraint firstItem="aEV-VX-c1n" firstAttribute="leading" secondItem="DlV-dG-okS" secondAttribute="trailing" constant="8" id="i6o-3d-rnv"/>
                                             <constraint firstItem="jpy-Xa-tgb" firstAttribute="top" secondItem="ppD-7b-7qV" secondAttribute="bottom" constant="8" id="ipL-w5-Nbh"/>
                                             <constraint firstItem="ppD-7b-7qV" firstAttribute="leading" secondItem="pka-Sx-Ken" secondAttribute="trailing" constant="8" id="jJo-ZX-cJU"/>
-                                            <constraint firstItem="b5n-XQ-ABc" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="kYc-Zq-i2h"/>
+                                            <constraint firstItem="U5j-RA-rRQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="k41-YZ-KSh"/>
                                             <constraint firstItem="DlV-dG-okS" firstAttribute="top" secondItem="U5j-RA-rRQ" secondAttribute="bottom" constant="8" id="kqv-nB-H3a"/>
+                                            <constraint firstItem="a2J-MX-jNh" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="lGx-zy-DNO"/>
                                             <constraint firstItem="jpy-Xa-tgb" firstAttribute="leading" secondItem="fQO-IY-eIX" secondAttribute="trailing" constant="8" id="m9T-s0-Veh"/>
-                                            <constraint firstItem="HBJ-Mg-c6G" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="mF1-Hv-H5D"/>
+                                            <constraint firstItem="eju-rN-WGQ" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="n1X-WV-2Wc"/>
                                             <constraint firstItem="b5n-XQ-ABc" firstAttribute="top" secondItem="KD1-yK-cSA" secondAttribute="bottom" constant="8" id="nAb-10-y2r"/>
                                             <constraint firstItem="IPa-Po-mtQ" firstAttribute="top" secondItem="eju-rN-WGQ" secondAttribute="bottom" constant="8" id="nOQ-80-JLr"/>
                                             <constraint firstItem="HBJ-Mg-c6G" firstAttribute="top" secondItem="VgT-qt-8f5" secondAttribute="bottom" constant="8" id="oU9-vh-48C"/>
@@ -770,25 +857,24 @@
                                             <constraint firstItem="KD1-yK-cSA" firstAttribute="leading" secondItem="XNz-Op-iyl" secondAttribute="trailing" constant="8" id="svC-3q-0K0"/>
                                             <constraint firstItem="Rgt-wZ-Q2m" firstAttribute="leading" secondItem="KD1-yK-cSA" secondAttribute="trailing" constant="8" id="ufk-gN-PS9"/>
                                             <constraint firstItem="Xpe-CM-cUG" firstAttribute="leading" secondItem="U5j-RA-rRQ" secondAttribute="trailing" constant="8" id="uoI-RS-QDt"/>
-                                            <constraint firstItem="KME-hb-tvF" firstAttribute="top" secondItem="58N-Cz-yrK" secondAttribute="top" id="vNB-Ht-xxY"/>
+                                            <constraint firstItem="q4N-g2-aok" firstAttribute="top" secondItem="58N-Cz-yrK" secondAttribute="top" id="ut3-N3-Ohn"/>
                                             <constraint firstItem="Rgt-wZ-Q2m" firstAttribute="top" secondItem="N1V-ZI-ks6" secondAttribute="bottom" constant="8" id="wHb-pf-Igo"/>
                                             <constraint firstItem="Itd-gf-xSf" firstAttribute="leading" secondItem="IPa-Po-mtQ" secondAttribute="trailing" constant="8" id="wNq-AA-mv8"/>
                                             <constraint firstItem="pka-Sx-Ken" firstAttribute="top" secondItem="Itd-gf-xSf" secondAttribute="bottom" constant="8" id="wqc-GV-Uhv"/>
                                             <constraint firstItem="qC9-jC-kzN" firstAttribute="top" secondItem="jpy-Xa-tgb" secondAttribute="bottom" constant="8" id="wuN-SC-QZs"/>
                                             <constraint firstItem="q4N-g2-aok" firstAttribute="leading" secondItem="VgT-qt-8f5" secondAttribute="trailing" constant="8" id="xtv-qU-Xeo"/>
                                             <constraint firstItem="qpv-mm-HH3" firstAttribute="top" secondItem="a2J-MX-jNh" secondAttribute="bottom" constant="8" id="yBp-P6-RIO"/>
+                                            <constraint firstItem="VgT-qt-8f5" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="yPS-21-B8x"/>
                                             <constraint firstItem="CjG-E4-sDE" firstAttribute="top" secondItem="KME-hb-tvF" secondAttribute="bottom" constant="8" id="z0a-Rg-eea"/>
-                                            <constraint firstItem="qpv-mm-HH3" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="zdO-73-YPG"/>
-                                            <constraint firstItem="9JU-L2-nky" firstAttribute="leading" secondItem="58N-Cz-yrK" secondAttribute="leading" id="zx7-Fp-jgh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="centerX" secondItem="Qn0-i8-Krm" secondAttribute="centerX" id="9bb-Kc-X49"/>
-                                    <constraint firstAttribute="bottom" secondItem="58N-Cz-yrK" secondAttribute="bottom" id="IcM-li-9gN"/>
-                                    <constraint firstAttribute="trailing" secondItem="58N-Cz-yrK" secondAttribute="trailing" id="bJ9-rh-Doj"/>
-                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="leading" secondItem="Qn0-i8-Krm" secondAttribute="leading" id="lBz-7x-gXa"/>
-                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="top" secondItem="Qn0-i8-Krm" secondAttribute="top" id="vBC-fX-ZE9"/>
+                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="centerX" secondItem="Qn0-i8-Krm" secondAttribute="centerX" id="68e-56-8S8"/>
+                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="leading" secondItem="Qn0-i8-Krm" secondAttribute="leading" id="fcd-H5-2hk"/>
+                                    <constraint firstItem="58N-Cz-yrK" firstAttribute="top" secondItem="Qn0-i8-Krm" secondAttribute="top" id="khl-te-QXg"/>
+                                    <constraint firstAttribute="bottom" secondItem="58N-Cz-yrK" secondAttribute="bottom" id="lqb-Q3-e9b"/>
+                                    <constraint firstAttribute="trailing" secondItem="58N-Cz-yrK" secondAttribute="trailing" id="oMJ-oK-R8p"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWY-VL-vkn">
@@ -831,10 +917,40 @@
                         <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="subtitle1Text" destination="l6I-NV-UMT" id="jgo-HR-W6i"/>
+                        <outlet property="title1Text" destination="ctW-K9-glj" id="nrb-t9-LxI"/>
+                        <segue destination="VxJ-kA-WnM" kind="show" identifier="goToEndScreen" id="fds-Mo-gVs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="20.239880059970016"/>
+        </scene>
+        <!--End-->
+        <scene sceneID="EB9-n8-MST">
+            <objects>
+                <viewController id="VxJ-kA-WnM" userLabel="End" customClass="EndViewController" customModule="Mujigae_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mNd-P7-f1O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxj-9e-X4X">
+                                <rect key="frame" x="22" y="56" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backSegueButton:" destination="VxJ-kA-WnM" eventType="touchUpInside" id="0bQ-e0-sSG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aJZ-Qj-cYy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6A-fK-73g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="19.340329835082461"/>
         </scene>
     </scenes>
     <resources>
