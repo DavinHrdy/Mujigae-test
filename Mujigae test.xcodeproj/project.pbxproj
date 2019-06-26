@@ -12,6 +12,8 @@
 		83F77A8822C316870015ECA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8622C316870015ECA9 /* Main.storyboard */; };
 		83F77A8A22C316880015ECA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8922C316880015ECA9 /* Assets.xcassets */; };
 		83F77A8D22C316880015ECA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A8B22C316880015ECA9 /* LaunchScreen.storyboard */; };
+		83F77A9D22C31A440015ECA9 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A9522C31A430015ECA9 /* ProximaNova-Regular.otf */; };
+		83F77AA222C31A440015ECA9 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83F77A9A22C31A440015ECA9 /* Proxima Nova Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		83F77A8922C316880015ECA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F77A8C22C316880015ECA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F77A8E22C316880015ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F77A9522C31A430015ECA9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		83F77A9A22C31A440015ECA9 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		83F77A7622C316870015ECA9 = {
 			isa = PBXGroup;
 			children = (
+				83F77A9422C31A040015ECA9 /* Fonts */,
 				83F77A8122C316870015ECA9 /* Mujigae test */,
 				83F77A8022C316870015ECA9 /* Products */,
 			);
@@ -62,6 +67,15 @@
 				83F77A8E22C316880015ECA9 /* Info.plist */,
 			);
 			path = "Mujigae test";
+			sourceTree = "<group>";
+		};
+		83F77A9422C31A040015ECA9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83F77A9A22C31A440015ECA9 /* Proxima Nova Bold.otf */,
+				83F77A9522C31A430015ECA9 /* ProximaNova-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F77AA222C31A440015ECA9 /* Proxima Nova Bold.otf in Resources */,
 				83F77A8D22C316880015ECA9 /* LaunchScreen.storyboard in Resources */,
+				83F77A9D22C31A440015ECA9 /* ProximaNova-Regular.otf in Resources */,
 				83F77A8A22C316880015ECA9 /* Assets.xcassets in Resources */,
 				83F77A8822C316870015ECA9 /* Main.storyboard in Resources */,
 			);
