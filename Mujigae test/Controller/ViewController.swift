@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     @IBAction func doneButtonAction(_ sender: Any) {
         
         // change this function to expand capability (connect online?). For now it is only reciting selected foods.
+        
         foodArray.sort()
         
         for food in foodArray {
